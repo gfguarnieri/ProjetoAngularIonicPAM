@@ -1,22 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+        <ion-title>Cálculo de Média</ion-title>
     </ion-toolbar>
-  </ion-header>
+</ion-header>
+<ion-content>
+    
+    <h1>Simulação</h1>
+    <ion-list>
+        <ion-item>
+            <ion-input type="text" label="Nome" labelPlacement="floating" [(ngModel)]="nome"/>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" label="Sobrenome" labelPlacement="floating" [(ngModel)]="sobrenome"/>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" label="Nome completo" labelPlacement="floating" [value]="nomeCompleto" readonly/>
+        </ion-item>
+    </ion-list>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+    <ion-button (click)="concatenarNomes()">
+        Concatenar
+    </ion-button>
+
 </ion-content>
