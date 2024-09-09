@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AlertController, IonicModule } from '@ionic/angular';
+import { IonicModule, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
