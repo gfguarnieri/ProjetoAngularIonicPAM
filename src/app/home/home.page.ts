@@ -42,4 +42,9 @@ export class HomePage {
     this.nome = "";
   }
 
+  remover(posicao:number){
+    console.log(posicao);
+    this.items.splice(posicao, 1);
+  }
+
 }
